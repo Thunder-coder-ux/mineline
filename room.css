@@ -1,0 +1,26 @@
+.body_background{
+    background-color: cornflowerblue;
+}
+
+#room_namer{
+    width: 300px;
+    height: 20px;
+    background-color: darkcyan;
+    color: rebeccapurple;
+}
+
+#log{
+    background-color: crimson;
+}
+
+#rooms{
+    background-color: cadetblue;
+    height: 500px;
+    width: 650px;
+    border-radius: 25px;
+}
+
+img{
+    width: 114px ;
+    height: 114px;
+}

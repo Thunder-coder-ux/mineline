@@ -1,0 +1,42 @@
+<html><head><title>MINELINE</title>
+    <link rel="stylesheet" type="text/css" href="room.css">
+    <script src="room.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+<body class="body_background">
+
+  <button id="log" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+
+    <center>
+    <h1 class="header">
+      MINELINE
+      <sup>
+        <img src="mineline logo.PNG">
+      </sup>
+    </h1>
+
+    <h3 id="user_name" class="color_white"></h3>
+
+    <br><br>
+    <div>
+      <label> # Add room #</label>
+    <input id="room_namer" clas="form-control" placeholder="Enter a room name for your Chat room">
+    <br>
+    <button id="room_adder" onclick="add()" class="btn btn-danger">Add room</button></div>
+    <br><br>
+    <hr style="width: 50%;">
+    <h2>Live rooms</h2>
+    <div id="rooms">
+      <h3></h3>
+    </div>
+    </center>
+</body>
+</html>
